@@ -1,0 +1,20 @@
+
+
+.right {
+    float: right;
+}
+
+nav {
+    width: 100vw;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+a {
+    padding: 10px;
+    border: 1px solid lightgray;
+    text-decoration: none;
+    color: grey;
+}
