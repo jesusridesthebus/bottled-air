@@ -19,4 +19,10 @@ export class EditBottleComponent implements OnInit {
     this.bottleService.updateBottle(bottleToUpdate);
   }
 
+  beginDeletingBottle(bottleToDelete){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.bottleService.deleteBottle(bottleToDelete);
+    }
+  }
+
 }

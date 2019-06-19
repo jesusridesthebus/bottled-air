@@ -29,4 +29,9 @@ export class BottleService {
                                 description: localUpdatedBottle.description,
                                 price: localUpdatedBottle.price});
   }
+
+  deleteBottle(localBottleToDelete){
+    var bottleEntryInFirebase = this.getBottleById(localBottleToDelete.$key);
+    bottleEntryInFirebase.remove();
+  }
 }
