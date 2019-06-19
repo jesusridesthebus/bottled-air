@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Setup/Installation Requirements
 
-* _$ git clone https://github.com/KNBAnderson/Petflix;_
+* _$ git clone https://github.com/KNBAnderson/bottled-air-marketplace.git;_
 * _Create an account at https://firebase.google.com/_
 * _On Firebase, create a project called bottled-air-marketplace_
 * _Create a realtime database within the project_
