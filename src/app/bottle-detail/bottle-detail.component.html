@@ -1,5 +1,5 @@
 <div>
-  <h3>{{bottle.origin}} {{bottle.year}}</h3>
-  <h5>{{bottle.description}}</h5>
-  <h5>${{bottle.price}}</h5>
+  <h3>{{(bottle | async)?.origin}} {{(bottle | async)?.year}}</h3>
+  <h5>{{(bottle | async)?.description}}</h5>
+  <h5>${{(bottle | async)?.price}}</h5>
 </div>

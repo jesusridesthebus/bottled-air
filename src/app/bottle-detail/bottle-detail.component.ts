@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Bottle } from '../bottle.model';
 import { BottleService } from '../bottle.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-bottle-detail',
@@ -11,8 +12,8 @@ import { BottleService } from '../bottle.service';
   providers: [BottleService]
 })
 export class BottleDetailComponent implements OnInit {
-  bottleId: number = null;
-  bottle: Bottle;
+  bottleId: string;
+  bottle;
 
   constructor(
     private route: ActivatedRoute, 
@@ -21,9 +22,11 @@ export class BottleDetailComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    // this.route.params.forEach((urlParameters) => {
-    //   this.bottleId = parseInt(urlParameters['id']);}) 
-    //this.bottle = this.bottleService.getBottleById(this.bottleId);
+    this.route.params.forEach((urlParameters) => {
+      this.bottleId = urlParameters['id'];
+    }); 
+    this.bottle = this.bottleService.getBottleById(this.bottleId);
+  
   }
 
 }
