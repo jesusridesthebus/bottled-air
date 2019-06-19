@@ -9,6 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutComponent } from './about/about.component';
 import { MarketComponent } from './market/market.component';
 import { AirDetailsComponent } from './air-details/air-details.component';
+import { BottleDetailComponent } from './bottle-detail/bottle-detail.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AirDetailsComponent } from './air-details/air-details.component';
     NavBarComponent,
     AboutComponent,
     MarketComponent,
-    AirDetailsComponent
+    AirDetailsComponent,
+    BottleDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <h2>Marketplace</h2>
 
-<div *ngFor="let bottle of bottles" class="panel panel-info">
+<div *ngFor="let bottle of bottles" (click)="goToDetailPage(bottle)" class="panel panel-info">
   <div class="panel-body">
     <h3>{{bottle.origin}} {{bottle.year}}</h3>
     <h5>{{bottle.description}}</h5>
