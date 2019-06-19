@@ -1,3 +1,18 @@
-<p>
-  edit-bottle works!
-</p>
+<h4>Edit Bottle</h4>
+
+<label>New Bottle Origin:</label>
+<input [(ngModel)]="selectedBottle.origin">
+<br>
+
+<label>New Bottle Year:</label>
+<input [(ngModel)]="selectedBottle.year">
+<br>
+
+<label>New Bottle Description:</label>
+<input [(ngModel)]="selectedBottle.description">
+<br>
+
+<label>New Bottle Price:</label>
+<input [(ngModel)]="selectedBottle.price">
+
+<button (click)="beginUpdatingBottle(selectedBottle)">Update</button>

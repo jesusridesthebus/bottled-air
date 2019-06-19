@@ -1,12 +1,12 @@
 <h2>Marketplace</h2>
 
-<div *ngFor="let bottle of bottles | async" (click)="goToDetailPage(bottle)" class="panel panel-info">
+<div *ngFor="let bottle of bottles | async" class="panel panel-info">
   <div class="panel-body">
-    <h3>{{bottle.origin}}</h3>
+    <h3 (click)="goToDetailPage(bottle)">{{bottle.origin}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       {{bottle.description}}
       <hr>
-      <app-edit-bottle></app-edit-bottle>
+      <app-edit-bottle [selectedBottle]="bottle"></app-edit-bottle>
     </div>
   </div>
 </div>

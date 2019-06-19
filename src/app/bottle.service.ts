@@ -21,4 +21,12 @@ export class BottleService {
   getBottleById(bottleId: string) {
     return this.database.object('bottles/' + bottleId);
   }
+
+  updateBottle(localUpdatedBottle){
+    var bottleEntryInFirebase = this.getBottleById(localUpdatedBottle.$key);
+    bottleEntryInFirebase.update({origin: localUpdatedBottle.origin,
+                                year: localUpdatedBottle.year,
+                                description: localUpdatedBottle.description,
+                                price: localUpdatedBottle.price});
+  }
 }
