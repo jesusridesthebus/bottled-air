@@ -6,13 +6,14 @@ import { BottleService } from '../bottle.service';
 @Component({
   selector: 'app-market',
   templateUrl: './market.component.html',
-  styleUrls: ['./market.component.css']
+  styleUrls: ['./market.component.css'],
+  providers: [BottleService]
 })
 export class MarketComponent implements OnInit {
-  constructor(private router: Router, private bottleService: BottleService) {}
   bottles: Bottle[];
+  constructor(private router: Router, private bottleService: BottleService) {}
 
-  ngOnInit() {
+  ngOnInit(){
     this.bottles = this.bottleService.getBottles();
   }
  

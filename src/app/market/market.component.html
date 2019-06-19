@@ -2,8 +2,6 @@
 
 <div *ngFor="let bottle of bottles" (click)="goToDetailPage(bottle)" class="panel panel-info">
   <div class="panel-body">
-    <h3>{{bottle.origin}} {{bottle.year}}</h3>
-    <h5>{{bottle.description}}</h5>
-    <h5>${{bottle.price}}</h5>
+    <h3>{{bottle.origin}}</h3>
   </div>
 </div>
