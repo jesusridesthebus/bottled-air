@@ -1,3 +1,3 @@
-export class Bottle.Model { 
-    constructor (public  id: number, public origin: string, public description: string, public price: number){}
+export class Bottle { 
+    constructor (public  id: number, public origin: string, public year: number, public description: string, public price: number){}
 }
