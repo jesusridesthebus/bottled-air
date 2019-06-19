@@ -1,27 +1,37 @@
 # AirMarket
 
+#### By _**Katlin Anderson and Liz Kelley**_
+
+## Description
+This website sells bottled air to the post apocalyptic wealthy
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-## Development server
+## Setup/Installation Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* _$ git clone https://github.com/KNBAnderson/Petflix;_
+* _$ npm install;_
+* _$ ng serve --open;_
 
-## Code scaffolding
+## Installation Requirements
+* Run in browser
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Known Bugs
+There are no known bugs.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+_HTML_
+_CSS_
+_TypeScript_
+_Angular_
+_Node_
+_Bootstrap_
+_Jasmine_
+_Linter_
+_Babel_
 
-## Running unit tests
+### License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*This software is licensed under the GPL license.*
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2019 **_Katlin Anderson_**

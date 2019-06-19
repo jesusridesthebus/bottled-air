@@ -10,7 +10,16 @@ import { AboutComponent } from './about/about.component';
 import { MarketComponent } from './market/market.component';
 import { AirDetailsComponent } from './air-details/air-details.component';
 import { BottleDetailComponent } from './bottle-detail/bottle-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -26,7 +35,9 @@ import { BottleDetailComponent } from './bottle-detail/bottle-detail.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

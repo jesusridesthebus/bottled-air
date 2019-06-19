@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Bottle } from './../bottle.model';
 import { Router } from '@angular/router';
 import { BottleService } from '../bottle.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-market',
@@ -10,7 +11,7 @@ import { BottleService } from '../bottle.service';
   providers: [BottleService]
 })
 export class MarketComponent implements OnInit {
-  bottles: Bottle[];
+  bottles: FirebaseListObservable<any[]>;
   constructor(private router: Router, private bottleService: BottleService) {}
 
   ngOnInit(){

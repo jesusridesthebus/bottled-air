@@ -1,0 +1,15 @@
+{ "bottles": [{
+  "id": 1,
+  "origin": "Swiss Alps",
+  "year": 2003,
+  "description": "This crisp air has floral notes and will make you feel like the hills are alive.",
+  "price": 3000
+},
+{
+  "id": 2,
+  "origin": "Swiss Alpsss",
+  "year": 2003,
+  "description": "This crisp air has floral notes and will make you feel like the hills are alive.",
+  "price": 3000
+}]
+}

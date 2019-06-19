@@ -1,15 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Bottle } from './bottle.model';
 import { BOTTLES } from './mock-bottles';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class BottleService {
+  bottles: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.bottles = database.list('bottles');
+   }
 
   getBottles() {
-    return BOTTLES;
-  }
+    return this.bottles;
+  };
 
   getBottleById(bottleId: number) {
     for(let i = 0; i <= BOTTLES.length - 1; i++) {
