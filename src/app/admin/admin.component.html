@@ -6,12 +6,6 @@
     <div class="panel-body">
     <div>
       <div>
-        <label>Bottle Id Number:</label>
-        <br>
-        <input #newId>
-      </div>
-
-      <div>
         <label>Bottle Origin:</label>
         <br>
         <input #newOrigin>
@@ -34,7 +28,7 @@
         <br>
         <input #newPrice>
       </div>
-      <button (click)="submitForm(newId.value, newOrigin.value, newYear.value, newDescription.value, newPrice.value); newId.value=''; newOrigin.value=''; newYear.value=''; newDescription=''; newPrice.value=''">Add</button>
+      <button (click)="submitForm(newOrigin.value, newYear.value, newDescription.value, newPrice.value); newOrigin.value=''; newYear.value=''; newDescription=''; newPrice.value=''">Add</button>
     </div>
   </div>
 </div>  

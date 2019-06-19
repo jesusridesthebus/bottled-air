@@ -6,7 +6,7 @@ import { Bottle } from '../bottle.model';
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [AlbumService]
+  providers: [BottleService]
 })
 export class AdminComponent implements OnInit {
 
@@ -17,6 +17,7 @@ export class AdminComponent implements OnInit {
 
   submitForm(origin: string, year: number, description: string, price: number) {
     var newBottle: Bottle = new Bottle(origin, year, description, price);
+    this.bottleService.addBottle(newBottle);
     console.log(newBottle);
   }
 

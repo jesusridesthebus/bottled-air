@@ -21,10 +21,9 @@ export class BottleDetailComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.bottleId = parseInt(urlParameters['id']);
-    });  
-    this.bottle = this.bottleService.getBottleById(this.bottleId);
+    // this.route.params.forEach((urlParameters) => {
+    //   this.bottleId = parseInt(urlParameters['id']);}) 
+    //this.bottle = this.bottleService.getBottleById(this.bottleId);
   }
 
 }
