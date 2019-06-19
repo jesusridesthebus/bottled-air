@@ -16,9 +16,9 @@ export class BottleService {
   };
 
   getBottleById(bottleId: number) {
-    for(let i = 0; i <= BOTTLES.length - 1; i++) {
-      if(BOTTLES[i].id === bottleId) {
-        return BOTTLES[i];
+    // for(let i = 0; i <= BOTTLES.length - 1; i++) {
+    //   if(BOTTLES[i].id === bottleId) {
+    //     return BOTTLES[i];
       }
     }
   }

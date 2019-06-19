@@ -4,6 +4,7 @@ import { SplashComponent } from './splash/splash.component';
 import { AboutComponent } from './about/about.component';
 import { MarketComponent } from './market/market.component';
 import { BottleDetailComponent } from './bottle-detail/bottle-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [ 
     {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
     {
       path: 'bottle/:id',
       component: BottleDetailComponent
+    },
+    {
+      path: 'admin',
+      component: AdminComponent
     }
 ];
 

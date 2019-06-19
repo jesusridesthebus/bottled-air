@@ -13,6 +13,7 @@ import { BottleDetailComponent } from './bottle-detail/bottle-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     AboutComponent,
     MarketComponent,
     AirDetailsComponent,
-    BottleDetailComponent
+    BottleDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

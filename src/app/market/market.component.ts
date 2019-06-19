@@ -19,7 +19,7 @@ export class MarketComponent implements OnInit {
   }
  
   goToDetailPage(clickedBottle: Bottle) {
-    this.router.navigate(['bottle', clickedBottle.id]);
+    // this.router.navigate(['bottle', clickedBottle.id]);
   };
 
 }

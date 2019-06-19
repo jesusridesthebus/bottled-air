@@ -1,0 +1,42 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+<h3>Add New Bottle to Inventory</h3>
+  </div>
+
+    <div class="panel-body">
+    <div>
+      <div>
+        <label>Bottle Id Number:</label>
+        <br>
+        <input #newId>
+      </div>
+
+      <div>
+        <label>Bottle Origin:</label>
+        <br>
+        <input #newOrigin>
+      </div>
+
+      <div>
+        <label>Bottle Year:</label>
+        <br>
+        <input #newYear>
+      </div>
+
+      <div>
+        <label>Bottle Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Bottle Price: $</label>
+        <br>
+        <input #newPrice>
+      </div>
+      <button (click)="submitForm(newId.value, newOrigin.value, newYear.value, newDescription.value, newPrice.value); newId.value=''; newOrigin.value=''; newYear.value=''; newDescription=''; newPrice.value=''">Add</button>
+    </div>
+  </div>
+</div>  
+  
+  
