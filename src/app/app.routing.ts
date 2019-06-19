@@ -9,7 +9,7 @@ import { AdminComponent }   from './admin/admin.component';
 const appRoutes: Routes = [ 
     {
       path: '',
-      component: AboutComponent
+      component: SplashComponent
       },
     {
       path: 'about',
