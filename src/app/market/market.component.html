@@ -3,5 +3,10 @@
 <div *ngFor="let bottle of bottles | async" (click)="goToDetailPage(bottle)" class="panel panel-info">
   <div class="panel-body">
     <h3>{{bottle.origin}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{bottle.description}}
+      <hr>
+      <app-edit-bottle></app-edit-bottle>
+    </div>
   </div>
 </div>
